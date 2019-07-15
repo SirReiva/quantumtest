@@ -6,25 +6,62 @@
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quantum Project</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
-<link href="bundle.css" rel="stylesheet"></head>
+	<style>
+		body {
+  background-color: #b08838;
+  font-size: 16px;
+  margin: 20px 0;
+  display: flex;
+}
 
+.container {
+  margin: 0 auto;
+}
+
+.mobile-light,
+.mobile-dark{
+  position: relative;
+  display: inline-block;
+  border-radius: 60px;
+  padding: 80px 24px;
+}
+
+.mobile-light {
+  background: #f0f0f0;
+  background: linear-gradient(135deg, #f0f0f0, #fafafa);
+}
+
+.mobile-dark {
+  background: #333333;
+  background: linear-gradient(135deg, #333333, #4e4d4d);
+}
+
+.mobile-dark:before,
+.mobile-light:before {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 60px;
+  border-radius: 10px;
+}
+
+.mobile-light:before {
+  background-color: #d7d7d7;
+}
+
+.mobile-dark:before {
+  background-color: #4e4d4d;
+}
+
+	</style>
 <body>
-    <example-app></example-app>
-<script type="text/javascript" src="bundle.js"></script></body>
-<style>
-	html{
-		width: 425px;
-		height: 725px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: #eee;
-	}
-	body{
-		width: 425px;
-		height: 725px;
-		background-color: white;
-	}
-</style>
+	<div class="container">
+		<div class="mobile-dark">
+			<iframe width="425" height="725" frameBorder="0" src="./index2.html"></iframe>
+		</div>
+	</div>
+    
 </html>
